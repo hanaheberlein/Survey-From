@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1 id="title">freeCodeCamp Survery From</h1>
+    <p id="description">Thank you for taking the time to help us imporve the platform</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name
+            <input 
+            id="name"
+            type="text"
+            placeholder="Enter Your Name"
+            required
+            />
+        </label>
+        <label id="email-label">Email
+        <input
+        type="email"
+        id="email"
+        placeholder="Enter Your Email"
+        required
+        />
+    </label>
+    <label id="number-label">Age
+      <input
+      id="number"
+      type="number"
+      min="3"
+      max="99"
+      placeholder="Age"
+      />
+      </label>
+      </fieldset>
+  
+  <fieldset>
+  <select id="dropdown">
+    <option>Select One</option>
+    <option></option>
+    <option></option>
+    </select>
+</fieldset>
+
+<fieldset>
+  <label for="definitely">
+    <input 
+    id="definitely" 
+    type="radio" 
+    name="rating"
+    value="definitely"
+    />Definitely
+    </label>
+  <label for="maybe">
+    <input 
+    id="maybe" 
+    type="radio" 
+    name="rating"
+    value="maybe"
+    />Maybe</label>
+  </fieldset>
+
+<fieldset>
+  <select id="most-like" name="mostLike" class="form-control" required>
+            <option disabled selected value>Select an option</option>
+            <option value="challenges">Challenges</option>
+            <option value="projects">Projects</option>
+            <option value="community">Community</option>
+            <option value="openSource">Open Source</option>
+          </select>
+</fieldset>
+
+<fiedlset>
+<label>
+  <input
+  type="checkbox"
+  value="..."
+  />...</label>
+  <label>
+  <input
+  type="checkbox"
+  value="..."
+  />...</label>
+  <label>
+  <input
+  type="checkbox"
+  value="..."
+  />...</label>
+  <label>
+  <input
+  type="checkbox"
+  value="..."
+  />...</label>
+</fieldset>
+
+<fiedlset>
+<textarea>
+
+</textarea>
+</fieldset>
+
+<button type="submit" id="submit">Submit</button>
+    </form>
+
+
+
+</body>
+</html>
