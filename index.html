@@ -6,101 +6,187 @@
     <title>Survey Form</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
+
 <body>
-    <h1 id="title">freeCodeCamp Survery From</h1>
-    <p id="description">Thank you for taking the time to help us imporve the platform</p>
+    <header>
+    <h1 class="title">Pilates Studio Survey</h1>
+    <p class="description">Thank you for taking the time to help us improve our studio</p>
+    </header>
+
     <form id="survey-form">
       <fieldset>
-        <label id="name-label">Name
-            <input 
-            id="name"
-            type="text"
-            placeholder="Enter Your Name"
-            required
-            />
-        </label>
-        <label id="email-label">Email
+        <label for="name">Name</label>
+        <input 
+        id="name"
+        name="name"
+        type="text"
+        class="text-field"
+        placeholder="Enter Your Name"
+        required
+        />
+        <label for="email">Email</label>
         <input
         type="email"
         id="email"
+        class="text-field"
+        name="email"
         placeholder="Enter Your Email"
         required
         />
-    </label>
-    <label id="number-label">Age
+
+    <label for="number">Age</label>
       <input
       id="number"
+      name="number"
       type="number"
+      class="text-field"
       min="3"
       max="99"
       placeholder="Age"
       />
-      </label>
       </fieldset>
   
   <fieldset>
-  <select id="dropdown">
-    <option>Select One</option>
-    <option></option>
-    <option></option>
+    <p>How often do you take classes at our studio?</p>
+  <select class="dropdown">
+    <option value="">Select One</option>
+    <option value="none">Less than 1 time per week</option>
+    <option value="one">1 time per week</option>
+    <option value="two-three">2-3 times per week</option>
+    <option value="four-five">4-5 times per week</option>
+    <option value="six-plus">6+ times per week</option>
     </select>
 </fieldset>
 
-<fieldset>
-  <label for="definitely">
+  <fieldset>
+    <p>How do you rate the level of difficulty of our classes?</p>
+    <label for="difficult">
     <input 
-    id="definitely" 
+    id="difficult" 
+    name="level"
     type="radio" 
-    name="rating"
-    value="definitely"
-    />Definitely
+    class="form-control"
+    value="difficult"
+    />Too difficult for me
     </label>
-  <label for="maybe">
-    <input 
-    id="maybe" 
-    type="radio" 
-    name="rating"
-    value="maybe"
-    />Maybe</label>
-  </fieldset>
+    <label for="just-right">
+      <input 
+      id="just-right" 
+      type="radio" 
+      class="form-control"
+      name="level"
+      value="just-right"
+      />Just right--I'm challenged frequently</label>
+      <label for="need-more">
+      <input 
+      id="need-more" 
+      name="level"
+      class="form-control"
+      type="radio" 
+      value="need-more"
+      />I need more!
+      </label>
+     </fieldset>
 
-<fieldset>
-  <select id="most-like" name="mostLike" class="form-control" required>
-            <option disabled selected value>Select an option</option>
-            <option value="challenges">Challenges</option>
-            <option value="projects">Projects</option>
-            <option value="community">Community</option>
-            <option value="openSource">Open Source</option>
-          </select>
+    <fiedlset class="checkbox">
+      <p>What is your favorite class at our studio?</p>
+        <label for="cyle">
+        <input
+        type="checkbox"
+        value="cyle"
+        class="fav-class"
+        id="cycle"
+        />Cycle</label>
+        <label for="barre">
+        <input
+        type="checkbox"
+        value="barre"
+        id="barre"
+        class="fav-class"
+        />Barre</label>
+        <label>
+      <label for="mat-pilates">
+        <input
+        type="checkbox"
+        value="mat-pilates"
+        id="mat-pilates"
+        class="fav-class"
+      />Mat Pilates</label>
+        <label for="gentle-pilates">
+        <input
+        type="checkbox"
+        value="gentle-pilates"
+        class="fav-class"
+        id="gentle-pilates"
+        />Restorative/Gentle Pilates</label>
+        <label for="fusion">
+        <input
+        type="checkbox"
+        value="fustion"
+        class="fav-class"
+        id="fusion"
+        />Fusion  </label>
+      <label for="yoga">
+        <input
+        type="checkbox"
+        value="yoga"
+        class="fav-class"
+        id="yoga"
+        />Yoga</label>
+        <label>
+      </fieldset>
+<fiedlset class="checkbox">
+  <p>Which best describes your goals?</p>
+  <label for="stress-relief">
+  <input
+  type="checkbox"
+  value="stress-relief"
+  class="fav-class"
+  id="stress-relief"
+  />Stress Relief</label>
+  <label for="flexibility">
+    <input
+    type="checkbox"
+    value="flexibility"
+    id="flexibility"
+    class="fav-class"
+    />Flexibility</label>
+    <label>
+  <label for="toning-up">
+  <input
+  type="checkbox"
+  value="toning-up"
+  id="toning-up"
+  class="fav-class"
+  />Toning Up</label>
+  <label for="weight-loss">
+  <input
+  type="checkbox"
+  value="weight-loss"
+  class="fav-class"
+  id="weight-loss"
+  />Weight Loss</label>
+  <label for="injury-prevention">
+    <input
+    type="checkbox"
+    value="injury-prevention"
+    class="fav-class"
+    id="injury-prevention"
+    />Injury prevention/management</label>
+  <label for="yoga">
+        <input
+        type="checkbox"
+        value="yoga"
+        class="fav-class"
+        id="yoga"
+        />Yoga</label>
+        <label>
 </fieldset>
 
-<fiedlset>
-<label>
-  <input
-  type="checkbox"
-  value="..."
-  />...</label>
-  <label>
-  <input
-  type="checkbox"
-  value="..."
-  />...</label>
-  <label>
-  <input
-  type="checkbox"
-  value="..."
-  />...</label>
-  <label>
-  <input
-  type="checkbox"
-  value="..."
-  />...</label>
-</fieldset>
 
 <fiedlset>
-<textarea>
-
-</textarea>
+  <p>Any comments or suggestions?</p>
+<textarea placeholder="Enter your comment here..."></textarea>
 </fieldset>
 
 <button type="submit" id="submit">Submit</button>
