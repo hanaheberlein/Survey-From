@@ -77,3 +77,7 @@ button {
     font-size: 1.2rem;
     background-color: #0072B5;
     color: #EFE1CE;
+}
+::placeholder {
+    font-size: 0.9rem;    
+}
